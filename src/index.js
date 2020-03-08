@@ -17,7 +17,7 @@ async function getEmails (url) {
   let emails = html.match(emailPattern)
   if (emails){
     emails = emails.filter(email => !(email.match(filterPattern)))
-    if (emails){
+    if (emails.length > 0){
       return Array.from( new Set(emails))
       }
     }
@@ -49,7 +49,7 @@ async function getEmailsAndSNs (url) {
   const sns = getSocialNetworksFromHTMLText(html)
   if (emails){
     emails = emails.filter(email => !(email.match(filterPattern)))
-    if (emails){
+    if (emails.length > 0){
       sns.Emails = Array.from( new Set(emails))
       }
     }
