@@ -2,7 +2,7 @@
   "name": "scrapify-node",
   "version": "1.0.0",
   "description": "Package to help with extracting data from webpages",
-  "main": "src/index.js",
+  "main": "./index.js",
   "directories": {
     "test": "test"
   },
