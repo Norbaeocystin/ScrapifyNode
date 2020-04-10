@@ -1,8 +1,8 @@
 {
   "name": "scrapify-node",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Package to help with extracting data from webpages",
-  "main": "./src/index.js",
+  "main": "./index.js",
   "directories": {
     "test": "test"
   },
@@ -10,8 +10,7 @@
     "test": "mocha test/*"
   },
   "keywords": [
-    "web",
-    "scraping"
+    "web scraping"
   ],
   "author": "Rastislav Baran",
   "license": "ISC",
@@ -20,7 +19,6 @@
     "mocha": "^7.1.0"
   },
   "dependencies": {
-    "request-promise": "^4.2.5",
-    "request":"*"
+    "request-promise": "^4.2.5"
   }
 }
