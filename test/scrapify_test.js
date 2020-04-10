@@ -7,7 +7,7 @@ describe("scrapify", function () {
         let email = response[0]
         chai.assert.equal('baralaboratory@gmail.com', email)
     });
-    it("social networks", async function () {  
+    /*it("social networks", async function () {  
         let response = await scrapify.getEmailsAndSNs('https://www.cas.sk/')
         let fb = response['facebook']
         let twitter = response['twitter']
@@ -17,7 +17,7 @@ describe("scrapify", function () {
                      'https://www.instagram.com/novycas/']
         let values = [fb, twitter, insta]
         chai.assert.notStrictEqual(links, values)
-    });
+    });*/
     it("email and social networks", async function () {  
         let response = await scrapify.getEmailsAndSNs('https://exponea.com')
         let fb = response['facebook']
